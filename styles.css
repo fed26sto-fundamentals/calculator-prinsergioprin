@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.btn {
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.number {
+    border: 1px solid #B85042;
+    border-radius: 10px;
+    background-color: #B85042;
+    color: white;
+}
+
+.number:hover {
+    background-color: #E7E8D1;
+    border: 1px solid #E7E8D1; 
+    color: black;
+}
+
+.operator {
+    border: 1px solid #A7BEAE; 
+    border-radius: 10px;
+    background-color: #A7BEAE;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #B85042;
+    border: 1px solid #B85042;
+}
+
+.decimal {
+    border: 1px solid #E7E8D1;
+    border-radius: 10px;
+    background-color: #E7E8D1;
+    color: black;
+}
+
+.decimal:hover {
+    background-color: #A7BEAE;
+    border: 1px solid #A7BEAE;
+    color: white;
+}
+
+.equal {
+    border: 1px solid #E7E8D1;
+    border-radius: 10px;
+    background-color: #E7E8D1;
+    color: black;
+}
+
+.equal:hover {
+    background-color: #A7BEAE;
+    border: 1px solid #A7BEAE;
+    color: white;
+}
+
+.clear {
+    border: 1px solid #E7E8D1;
+    border-radius: 10px;
+    background-color: #E7E8D1;
+    color: black;
+}
+
+.clear:hover {
+    background-color: #A7BEAE;
+    border: 1px solid #A7BEAE;
+    color: white;
+}
+
+.first-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.screen {
+    width: 235px;
+    border: 1px solid #B85042;
+    height: 75px;
+    margin: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.previous {
+    font-size: 20px;
+}
+
+.current {
+    font-size: 30px;
+}
