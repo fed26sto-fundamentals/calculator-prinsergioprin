@@ -33,8 +33,21 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 
     equal.addEventListener("click", function() {
-        operate()
+        if(currentValue != '' && previousValue != '') {
+            operate()
+            previousScreen.textContent = '';
+            if(previousValue.length <= 5) {
+                currentScreen.textContent = previousValue;
+            } else {
+                currentScreen.textContent = previousValue.slice(0,5) + "...";
+            }
+        }
     })
+
+    decimal.addEventListener("click", function() {
+        addDecimal();
+    })
+
 })
 
 function handleNumber(num) {
@@ -70,4 +83,10 @@ function operate() {
 
 function roundNumber(num) {
     return Math.round(num * 1000) / 1000;
+}
+
+function addDecimal() {
+    if(!currentValue.includes(".")) {
+        currentValue += '.';
+    }
 }
